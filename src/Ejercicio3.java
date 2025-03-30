@@ -8,21 +8,21 @@ public class Ejercicio3
         System.out.println("Ingrese un numero entre el 0 y el 999: ");
         int num = leer.nextInt();
 
-        if (num<10)
+        if (num < 0 || num > 999)
         {
-           System.out.println("El numero " + num + " tiene 1 cifra");
+            System.out.println("El numero ingresado está fuera del rango");
         }
-        else if (num>=10 && num<100)
+        else if (num < 10)
+        {
+            System.out.println("El numero " + num + " tiene 1 cifra");
+        }
+        else if (num < 100)
         {
             System.out.println("El numero " + num + " tiene 2 cifras");
         }
-        else if (num>=100)
-        {
-            System.out.println("El numero " + num + " tiene 3 cifras");
-        }
         else
         {
-            System.out.println("El numero ingresado esta fuera del rango");
+            System.out.println("El numero " + num + " tiene 3 cifras");
         }
     }
 }
